@@ -6,9 +6,53 @@
 		<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Template</h1>
-    <p>I'm in the process of making a website. This is the second page.
-    The first page has a bunch of links on it.</p>
+    <h1>Please Enter Your Details For Our Dating Website</h1>
+    
+    <form>
+    	Your Face<br>
+    	<label for="avatar">Your Image:</label> 
+    	<input type="file" id="avatar" name="avatar" required><br>
+    	<label for="avatar-preview">Image Preview:</label> 
+    	<img id="preview">
+    </form>
+    <form>
+    	Your General Details<br>
+    	<label for="name">Name:</label>
+    	<input type= "text" id="name" name="name" required><br>
+    	<label for="gender">Gender:</label>
+    	<input type="radio" id='gen1' name="one" required> Male
+    	<input type="radio" id='gen2' name="one" required>Female<br>    	
+    	<label for="age">Age:</label>
+    	<input type="number" id='age' name='age' required><br>   	
+    	<label for="birth">Date of Birth:</label>
+     	<input type="date" id='birth' name='birth'><br>    	
+     	<label for="color">Favorite Color:</label>
+    	<input type="color" id="color" name="color"><br> 	
+    	<label for="country">Which Country:</label>
+    	<select option id="country" name="country"></select><br>
+    </form>
+    <form>
+    	Your Indicators<br>
+    	<label for="height">Height:</label>
+    	Short <input type="range" id="height" name="height" min="0" max="100"> Tall <br>
+    	<label for="salary">Salary:</label>
+    	Poor <input type="range" id="salary" name="salary" min="0" max="100"> Rich
+    </form>
+    <form>
+    	Your Contact Imformation<br>
+    	
+    	<label for="email">Email:</label>
+    	<input type="email" id="email" name="email" required><br>
+    	<label for="mobile">Mobile:</label>
+			<input type="tel" id="mobile" name="mobile"><br>
+			<label for="address">Address:</label>
+			<textarea id="address" name="address"></textarea><br>
+			<label for="contact">Method of Contacting You?</label>
+			<input type="checkbox" id="contact" name="two"> Email
+			<input type="checkbox" id="contact" name="two"> Whatsapp
+			<input type="checkbox" id="contact" name="two"> In-app Chat
+    </form>
+    <input type="submit">
 		<script src="script.js"></script>
 </body>
 </html>
