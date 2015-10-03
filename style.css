@@ -1,3 +1,4 @@
+/*
 fieldset {
 	background: lightyellow;
 	border: 10px solid yellow;
@@ -16,4 +17,53 @@ label {
 textarea {
 	width: 360px;
 	height: 50px;
+}
+fieldset > * {
+   vertical-align: middle;
+}
+label {
+	display: inline-block;
+  width: 50px;	
+}
+.left, .right {
+    display: inline-block;
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+}
+.left {
+	background-color: red;
+  color: white;
+	text-align:center;
+	padding: 1px 1px 1px 1px;
+	
+}
+.right{
+	background-color: purple;
+  color: white;
+	text-align:center;
+}*/
+fieldset > * {
+    vertical-align: middle;
+}
+
+.leftlabel, .rightlabel {
+    display: inline-block;
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+}
+
+.leftlabel {
+    background-color: red;
+    color: white;
+}
+.rightlabel {
+    background-color: purple;
+    color: white;
+}
+
+label {
+    display: inline-block;
+    width: 50px;
 }
